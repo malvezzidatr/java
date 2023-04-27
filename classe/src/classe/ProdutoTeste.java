@@ -9,14 +9,16 @@ public class ProdutoTeste {
 		p1.nome = "Notebook";
 		p1.preco = 4356.89;
 		p1.desconto = 0.25;
+		System.out.println(p1.precoComDesconto());
 		
 		Produto p2 = new Produto();
 		p2.nome = "Caneta";
 		p2.preco = 12.56;
 		p2.desconto = 0.29;
+		System.out.println(p2.precoComDesconto());
 		
-		Double p1PrecoFinal = p1.preco * (1 - p1.desconto);
-		Double p2PrecoFinal = p2.preco * (1 - p1.desconto);
+		Double p1PrecoFinal = p1.precoComDesconto();
+		Double p2PrecoFinal = p2.precoComDesconto();
 		Double mediaCarrinho = (p1PrecoFinal + p2PrecoFinal) / 2;
 		
 		System.out.println(p1.nome);

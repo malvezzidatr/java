@@ -5,7 +5,8 @@ public class DataTeste {
 		Data date = new Data();
 		date.ano = "1999";
 		date.dia = "03";
-		date.mes = "Dezembro";
-		System.out.printf("Você nasceu dia %s de %s de %s", date.dia, date.mes, date.ano);
+		date.mes = "12";
+		String dataFormatada = date.formattedDate();
+		System.out.println(dataFormatada);
 	}
 }
